@@ -43,3 +43,6 @@ All the integers in nums are unique.
 
 
 nums is sorted in ascending order.
+
+Leetcode problem. Passes.
+https://leetcode.com/problems/binary-search/description/
