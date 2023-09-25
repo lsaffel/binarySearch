@@ -5,7 +5,12 @@ class Solution:
 
         while True:
             # find midpoint index in the array
-            mid = (left + right)//2  # integer division. Rounds down
+            # mid = (left + right)//2  # integer division. Rounds down
+
+            # the line above works, but this next line makes sure that it never
+            # overflows, in case left and right are really large:
+            mid = left + ((right - left) // 2)
+            
             if nums[mid] == target:
                 return mid
             if left == right:
